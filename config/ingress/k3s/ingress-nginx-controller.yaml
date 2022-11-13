@@ -21,6 +21,8 @@ kind: Deployment
 metadata:
   namespace: ingress-nginx
   name: ingress-nginx-controller
+  annotations:
+    alb.ingress.kubernetes.io/security-groups: sg-0e53cf81f900cb3c5
 spec:
   template:
     spec:
